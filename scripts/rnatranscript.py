@@ -4,3 +4,5 @@ def rna_transcript(strand: str) -> str:
             return 'C'
         if char == 'C':
             return 'G'
+        if char == 'T':
+            return 'A'
