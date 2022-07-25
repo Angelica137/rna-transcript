@@ -8,3 +8,4 @@ def rna_transcript(strand: str) -> str:
             return 'A'
         if char == 'A':
             return 'U'
+    raise ValueError('DNA strand incorrect')
