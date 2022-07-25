@@ -1,11 +1,6 @@
 def rna_transcript(strand: str) -> str:
-    for char in strand:
-        if char == 'G':
-            return 'C'
-        if char == 'C':
-            return 'G'
-        if char == 'T':
-            return 'A'
-        if char == 'A':
-            return 'U'
+    translations = {'G': 'C', 'C': 'G', 'T': 'A', 'A': 'U'}
+    for key in translations:
+        if key in strand:
+            return translations[key]
     raise ValueError('DNA strand incorrect')
