@@ -21,3 +21,7 @@ def test_rns_transcript_returns_U():
 def test_rns_transcript_returns_error():
     with pytest.raises(ValueError):
         rna_transcript('X') == ValueError('DNA strand incorrect')
+
+
+def test_rns_transcripts_returns_long_strand():
+    assert rna_transcript('ACGTGGTCTTAA') == 'UGCACCAGAAUU'
