@@ -11,3 +11,7 @@ def test_rns_transcript_returns_G():
 
 def test_rns_transcript_returns_A():
     assert rna_transcript('T') == 'A'
+
+
+def test_rns_transcript_returns_U():
+    assert rna_transcript('A') == 'U'
